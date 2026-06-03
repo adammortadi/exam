@@ -1,0 +1,66 @@
+
+
+
+:root{
+	--bg: #000000;
+	--card: #ffffff;
+	--primary: #2b6ef6;
+	--muted: #9ca3af;
+	--radius: 10px;
+	--shadow: 0 6px 18px rgba(15,23,42,0.08);
+	--max-width: 1100px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+	font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	background:var(--bg);
+	color:#ffffff;
+	line-height:1.45;
+	-webkit-font-smoothing:antialiased;
+}
+
+.wrap{max-width:var(--max-width);margin:32px auto;padding:24px}
+
+/* Header */
+.site-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--primary) 0%,#7c3aed 100%)}
+.site-title{font-weight:700;font-size:1.125rem}
+.site-sub{color:var(--muted);font-size:0.9rem}
+
+/* Grid / content */
+.grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+@media (max-width:880px){.grid{grid-template-columns:1fr}}
+
+.card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:var(--shadow)}
+
+
+h1{font-size:1.5rem;margin-bottom:8px}
+h2{font-size:1.125rem;margin-bottom:12px}
+p{color:var(--muted);margin-bottom:12px}
+
+
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;background:var(--primary);color:#fff;text-decoration:none;font-weight:600}
+.btn.ghost{background:transparent;color:var(--primary);border:1px solid rgba(43,110,246,0.12)}
+
+.form-row{display:flex;flex-direction:column;gap:8px}
+input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e6e9ef;background:#fff}
+textarea{min-height:100px}
+
+
+.list{display:flex;flex-direction:column;gap:12px}
+.list-item{display:flex;align-items:center;gap:12px}
+.avatar{width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,#ffd166,#ef476f)}
+
+
+.site-footer{margin-top:28px;text-align:center;color:var(--muted);font-size:0.9rem}
+
+
+.muted{color:var(--muted)}
+.center{text-align:center}
+
+
+@media (max-width:420px){.wrap{padding:16px}.site-title{font-size:1rem}}
+

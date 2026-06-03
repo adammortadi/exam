@@ -1,0 +1,1 @@
+console.log("code made by adam mortadiii");
